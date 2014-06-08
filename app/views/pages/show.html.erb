@@ -1,0 +1,27 @@
+
+<h3>Facebook :</h3>
+<p>  <%= @page.facebook_id %>
+</p>
+
+<!-- TODO make AJAX method to show/hide edges informations -->
+
+<% if @page.facebook_attributes.empty?%>
+	<p><%= t("facebook_error.object_does_not_exist") %></p>
+<% else %>
+	<h3>Attributes :</h3>
+	<%= pretty_print @page.facebook_attributes %>
+
+	<h3>Events :</h3>
+	<%= pretty_print @page.events %>
+
+	<h3>Albums :</h3>
+	<%= pretty_print @page.albums %>
+
+	<h3>Feed :</h3>
+	<%= pretty_print @page.feed %>
+<% end %>
+
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
