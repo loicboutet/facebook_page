@@ -1,5 +1,5 @@
 class FbConnection
-  CACHE_EXPIRATION = 4.hours.to_s
+  CACHE_EXPIRATION = 4.hours
   
   def self.graph
     return @graph if @graph.present?
