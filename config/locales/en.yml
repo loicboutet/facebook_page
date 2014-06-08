@@ -4,4 +4,8 @@
 en:
   hello: "Hello world"
   facebook_error:
-    object_does_not_exist: "The page does not seem to exist"
+    object_does_not_exist: "The page does not seem to exist"	
+  activerecord:
+    attributes:
+      page:
+        facebook_id: "Facebook Page Name or ID"

@@ -20,6 +20,7 @@ class FbConnection
     end
   end
   
+  # TODO add a way to force the data to refresh the cache
   def self.cached_request(cache_key, &block)
     begin
       Rails.cache.fetch(cache_key, :expires_in => CACHE_EXPIRATION) do
